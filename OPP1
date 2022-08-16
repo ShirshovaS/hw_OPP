@@ -98,7 +98,7 @@ class Reviewer(Mentor):
 
 def average_student_grade(course, *students):
     """
-    Подсчитываем среднюю оценку всех студентов в рамках конкретного курса"""
+   Средняя оценка всех студентов в рамках конкретного курса"""
     list_st = []
     for student in students:
         if students.grades.get(course):
@@ -108,7 +108,7 @@ def average_student_grade(course, *students):
 
 def average_feedback_lectures(course, *lectures):
     """
-    Подсчитываем среднюю оценку всех лекторов в рамках конкретного курса"""
+   Средняя оценка всех лекторов в рамках конкретного курса"""
     list_st = []
     for lecturer in lectures:
         if lecturer.student_feedback(course):
